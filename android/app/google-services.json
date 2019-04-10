@@ -1,0 +1,191 @@
+{
+  "project_info": {
+    "project_number": "922417347713",
+    "project_id": "payload-android"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:53dabd907f0af472",
+        "android_client_info": {
+          "package_name": "net.payload.payload.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:a0a01c25de15ff8f",
+        "android_client_info": {
+          "package_name": "net.payload.payload.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:70f5a31b5a8f69ad",
+        "android_client_info": {
+          "package_name": "net.payload.payload.stage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:d56e3033d04ee1ea",
+        "android_client_info": {
+          "package_name": "net.payload.payload.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:a39eeded299e8c82",
+        "android_client_info": {
+          "package_name": "net.payload.payload.xzibit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:fcfc8cb7966c67e2",
+        "android_client_info": {
+          "package_name": "net.payload.payload"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922417347713:android:d3d3c2f9e303a875",
+        "android_client_info": {
+          "package_name": "net.payload.payload.local"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZWlzof29tpFK-gpbltI7r1puep8cbQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
