@@ -40,11 +40,11 @@ public class LocationUpdateClient implements MethodChannel.MethodCallHandler, Ba
     public LocationUpdateClient(Context context, FlutterView flutterView){
         mContext = context;
 //
-//        if (Utils.requestingLocationUpdates(context)) {
-//            if (!checkPermissions()) {
-//                requestPermissions();
-//            }
-//        }
+        if (Utils.requestingLocationUpdates(context)) {
+            if (!checkPermissions()) {
+                requestPermissions();
+            }
+        }
 
         EventChannel eventChannel = new EventChannel(flutterView, EVENT_CHANNEL_NAME);
         eventChannel.setStreamHandler(this);

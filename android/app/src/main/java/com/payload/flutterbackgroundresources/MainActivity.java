@@ -19,9 +19,9 @@ public class MainActivity extends FlutterActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
-
-    new MethodChannel(getFlutterView(), "com.payload.flutterbackgroundresources/geofencing_plugin")
-            .setMethodCallHandler(new GeofencingPlugin(this, this));
+//
+//    new MethodChannel(getFlutterView(), "com.payload.flutterbackgroundresources/geofencing_plugin")
+//            .setMethodCallHandler(new GeofencingPlugin(this, this));
 
     locationUpdateClient = new LocationUpdateClient(this, getFlutterView());
 

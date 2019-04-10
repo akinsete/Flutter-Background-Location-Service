@@ -22,39 +22,10 @@ class HomeScreenState extends State<HomeScreen> {
   List<String> titles = new List();
   ScrollController _controller = new ScrollController();
 
-  String geofenceState = 'N/A';
-  double latitude = 37.419851;
-  double longitude = -122.078818;
-  double radius = 150.0;
-  ReceivePort port = ReceivePort();
-  final List<GeofenceEvent> triggers = <GeofenceEvent>[
-    GeofenceEvent.enter,
-    GeofenceEvent.dwell,
-    GeofenceEvent.exit
-  ];
-  final AndroidGeofencingSettings androidSettings = AndroidGeofencingSettings(
-      initialTrigger: <GeofenceEvent>[
-        GeofenceEvent.enter,
-        GeofenceEvent.exit,
-        GeofenceEvent.dwell
-      ],
-      loiteringDelay: 1000 * 60);
-
-
   @override
   void initState() {
     super.initState();
-    IsolateNameServer.registerPortWithName(port.sendPort, 'geofencing_send_port');
-    port.listen((dynamic data) {
-      print('Event: $data');
-      setState(() {
-        geofenceState = data;
-      });
-    });
-
     locationEvents.receiveBroadcastStream().listen(_onEvent, onError: _onError);
-
-    //initPlatformState();
   }
 
   void _onEvent(Object event) {
@@ -62,19 +33,12 @@ class HomeScreenState extends State<HomeScreen> {
       titles.add(event);
       _controller.jumpTo(_controller.position.maxScrollExtent);
     });
-   //print("Location Update:"+event);
   }
 
   void _onError(Object error) {
     print(error);
   }
 
-  static void callback(List<String> ids, Location l, GeofenceEvent e) async {
-    print('Fences: $ids Location $l Event: $e');
-    final SendPort send =
-    IsolateNameServer.lookupPortByName('geofencing_send_port');
-    send?.send(e.toString());
-  }
 
   String btnStart = 'Start Backgound Location Monitoring';
   String btnStop = 'Location montitoring not running';
@@ -181,10 +145,10 @@ class HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  Future<void> initPlatformState() async {
-    print('Initializing...');
-    await GeofencingManager.initialize();
-    print('Initialization done');
-  }
+//  Future<void> initPlatformState() async {
+//    print('Initializing...');
+//    await GeofencingManager.initialize();
+//    print('Initialization done');
+//  }
 
 }
